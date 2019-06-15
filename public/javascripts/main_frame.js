@@ -96,10 +96,11 @@ function control_panel_loaded_inner_callback(strTabName, response)
 }
 
 var g_nMenuClickTimer = 0;
+var g_bNeedSignedIn = false;
 
 function menuItems_listener()
 {
-	// check if the user has clicked way way too quickly (5 seconds interval for swtiching tabs)
+	// check if the user has clicked way way too quickly (3 seconds interval for swtiching tabs)
 	/* 
 	 * Reason: to avoid mis-placement of table and canvas contents, as table and canvas are "public-shared" area for all tabs.
 	 * Explanation of mis-placement: the initializing function of table / canvas is callback function, they happened after the
@@ -109,7 +110,7 @@ function menuItems_listener()
 	 * 								 OA tab, which is not cool and should be avoided.
 	*/
 	var nCurrentTime = new Date().getTime();
-	if (nCurrentTime - g_nMenuClickTimer < 5 * 1000)
+	if (nCurrentTime - g_nMenuClickTimer < 3 * 1000)
 	{
 		//alert("too quick!");
 		return;
@@ -127,7 +128,7 @@ function menuItems_listener()
 	strTmpItemName = strId.slice("menu_item_".length);
 	
 	$.getJSON('/getData?FunId=miscellaneous_get_session_user_stauts', {paramNum: 0}, function(rdata) {
-		if (rdata["user_status"] != "signed-in" && strTmpItemName != "introduction")
+		if (g_bNeedSignedIn == true && rdata["user_status"] != "signed-in" && strTmpItemName != "introduction")
 		{
 			//alert("Please sign in! This feature is only for registered users");
 			swal("Please log in!", "This feature is only for registered users.", "error");
