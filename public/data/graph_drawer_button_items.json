@@ -1,0 +1,32 @@
+[
+    {
+        "id":"graph_drawer_button_item_overall_analytics_1",
+        "name_en":"Bar Chart: Revision Number Distribution by Year and User Type",
+        "function_name":"draw_bar_chart_revison_number_distribution",
+        "tab":"overall_analytics"
+    },
+    {
+        "id":"graph_drawer_button_item_overall_analytics_2",
+        "name_en":"Pie Chart: Revision Number Distribution by User Type",
+        "function_name":"draw_pie_chart_revison_number_distribution",
+        "tab":"overall_analytics"
+    },
+    {
+        "id":"graph_drawer_button_item_individual_article_analytics_1",
+        "name_en":"Bar Chart: Revision Number Distribution by Year and User Type of Article",
+        "function_name":"draw_bar_chart_yearly_revison_number_distribution_of_article",
+        "tab":"individual_article_analytics"
+    },
+    {
+        "id":"graph_drawer_button_item_individual_article_analytics_2",
+        "name_en":"Pie Chart: Revision Number Distribution by User Type of Article",
+        "function_name":"draw_pie_chart_user_type_distribution_of_article",
+        "tab":"individual_article_analytics"
+    },
+    {
+        "id":"graph_drawer_button_item_individual_article_analytics_3",
+        "name_en":"Bar Chart: Top Contributors' Revision Number Distribution by Year of Article",
+        "function_name":"draw_bar_chart_top_users_yearly_revison_number_distribution_of_article",
+        "tab":"individual_article_analytics"
+    }
+]

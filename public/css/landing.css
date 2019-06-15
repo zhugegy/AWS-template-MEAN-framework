@@ -1,0 +1,339 @@
+/* general text formatting */
+
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 1vw;
+   background-image: url('/images/background_paper.png');
+}
+
+
+div#menuBox {
+   margin: 0em auto;
+   margin-top: 1em;
+
+   /*background-image: url('https://zhugegy.github.io/cv/images/banner.png');*/
+   background-image: url('/images/banner.png');
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center center;
+
+   position: relative;
+
+   height: 18vw;
+   width: 85%;
+}
+
+
+
+div#infoTableBox, div#controlPanelBox, div#graphCanvasBox{
+   margin-left: 6vw;
+   margin-right: 6vw;
+   border-top: 1.8pt solid #62cbe9;
+
+   //background-image: url('/images/content_background.png');
+   //background-size: 100% 100%;
+   //background-repeat: repeat-y;
+   //background-position: center center;''
+
+   width: 85%;
+}
+
+div#graphCanvasBox{
+	height: 30vw;
+}
+
+#switchUserDropDownMenu {
+ float:right;
+ margin-right:0.6vw; 
+ margin-top: 0.2vw; 
+}
+
+#switchUserDropDownMenuIcon {
+    //width: 2.2vw;
+    //height: 2.2vw;
+
+    /*some magic to make height always equal to width.*/
+    height: 0;
+    padding-top: 2.2vw;
+    width: 2.2vw;
+
+    border:none;
+    background-color: Transparent;
+    background-image: url('/images/user_switch_icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.switchUserDropDownContent {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 11.8vw;
+  font-size: 1vw;
+  box-shadow: 0.4vw 1vw 1vw 0vw rgb(193, 195, 195);
+  /* z-index: 1; */
+}
+
+.switchUserDropDownContent a, .switchUserDropDownContent span{
+  color: #684635;
+  padding: 0.2vw 1vw;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+
+
+
+.switchUserDropDownContent a:hover {background-color: #62cbe9;}
+
+#switchUserDropDownMenu:hover .switchUserDropDownContent {display: block;}
+
+
+ul#menuItemsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  position: absolute;
+  bottom: 0;
+  left: 6vw;
+}
+
+li.menuItem {
+  float: left;
+  padding-left:0.5vw;
+  padding-right:0.5vw;
+  
+  /* Another approach: control the width of the li
+  //display:inline;
+ 
+  //display: inline-block;
+  //width  : 100px;
+  */
+}
+
+li.menuItem:hover 
+{background-color: #62cbe9;}
+
+li.menuItem {
+  display: block;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+
+li.menuItem img{
+  height:3vw;
+}
+
+#ghostInfo {
+	visibility: hidden;
+}
+
+.tabContentHeading {
+  font-size: 2.5vw;
+}
+
+
+#canvasArea, .controlPanelContent, table.tabContentTable, th, td{
+  font-family: Arial, Helvetica, "Trebuchet MS", sans-serif;
+  margin-left: 14vw;
+  
+  width: 47vw;
+  font-size: 1vw;
+  padding: 0.1vw;
+
+  border-collapse: collapse;
+  border-bottom: 1px solid #a7a7a687;
+   
+  //border: 1px solid black;
+  vertical-align: top;
+  text-align: left;
+}
+
+td.tabContentTable_inlineTitle{
+  width: 15vw;
+  font-size: 1.2vw;
+  background-color: #62cbe9;
+  //font-weight: bold;
+}
+
+td.tabContentTable_inlineNotificationPink{
+  width: 15vw;
+  font-size: 0.8vw;
+  background-color: #ff7ded;
+}
+
+td.tabContentTable_inlineNotificationGrey{
+  width: 15vw;
+  font-size: 0.8vw;
+  background-color: #EEEEEE;
+}
+
+td.tabContentTable_inlineNotificationGreen{
+  width: 15vw;
+  font-size: 0.8vw;
+  background-color: #43ff53;
+}
+
+tr.clickable:hover{
+	background-color: #CCCCCC;
+}
+
+tr.selected{
+	background-color: yellow;
+}
+
+td.tabContentTable_th{
+  background-color: #cce2e9;
+  /*font-weight: bold;*/
+}
+
+#buttonArea button {
+  margin-left: 14vw;
+  background-color: #cce2e9; /* Green background */
+  border: 1px solid green; /* Green border */
+  //color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 27vw; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  text-align: left;
+}
+
+#buttonArea button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+#buttonArea button:hover {
+  background-color: #62cbe9;
+}
+
+.loader {
+  margin: 0.15vw;
+  border: 0.4vw solid #f3f3f3; /* Light grey */
+  border-top: 0.4vw solid #62cbe9;
+  border-radius: 50%;
+  width: 0.85vw;
+  height: 0.85vw;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+span.range-slider {
+    position: relative;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+
+span.range-slider input {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 15px;
+    width: 200px;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+span.range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+span.range-slider input::-moz-range-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 10;
+    -moz-appearance: none;
+    width: 9px;
+}
+
+span.range-slider input::-moz-range-track {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 1);
+    border: 0;
+}
+
+span.range-slider input:last-of-type::-moz-range-track {
+    -moz-appearance: none;
+    background: none transparent;
+    border: 0;
+}
+span.range-slider input[type=range]::-moz-focus-outer {
+  border: 0;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  //opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  //opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #62cbe9; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #62cbe9; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.introduction_img 
+{
+	width: 26vw;
+	height: auto;
+	
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#62cbe9; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}

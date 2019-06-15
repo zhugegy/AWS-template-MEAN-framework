@@ -1,0 +1,30 @@
+[
+    {
+        "id":"menu_item_introduction",
+        "name_zh-Hans":"功能介绍",
+        "name_en":"Introduction",
+        "name":"introduction",
+        "image_format":"png"
+    },
+    {
+        "id":"menu_item_overall_analytics",
+        "name_zh-Hans":"整体分析",
+        "name_en":"Overall Analytics",
+        "name":"overall_analytics",
+        "image_format":"png"
+    },
+    {
+        "id":"menu_item_individual_article_analytics",
+        "name_zh-Hans":"单个文章分析",
+        "name_en":"Individual Article Analytics",
+        "name":"individual_article_analytics",
+        "image_format":"png"
+    },
+    {
+        "id":"menu_item_author_analytics",
+        "name_zh-Hans":"作者分析",
+        "name_en":"Author Analytics",
+        "name":"author_analytics",
+        "image_format":"png"
+    }
+]

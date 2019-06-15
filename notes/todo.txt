@@ -1,0 +1,34 @@
+todo
+
+DONE json call back fill table bug:如果回来后已经换了tab（用户快速切换tab的时候），就不要再添加了（+= innerHTML前加一个检查）
+DONE 调API
+DONE 占坑流，用...或者动态加载符号占坑，而不是动态增加表格规模
+DONE IAA时间slider数值不能写死，要动态获取
+DONE yearRange double check 以防有人恶意修改HTML源码
+DONE bug：OA pie chart 不能第一个显示 =》加载按钮后，强行点击第一个按钮
+DONE OA pie chart 鼠标悬停信息
+DONE IAA 3个chart
+DONE 整体背景底色,界面美化
+DONE bug OA 200 rank 
+DONE OA graph admin total
+DONE IAA list not fully display
+DONE AA click more
+DONE AA 表格优化
+DONE AA time format
+DONE Register email 正则优化
+DONE Register 弹窗美化
+DONE NOT NECESSARY ANYMORE add floating quick navigation
+DONE OA history 反了
+DONE 新数据 写入Bug
+DONE 调API后数据预处理
+DONE chart 图例文字做到详细
+DONE Introduction填内容
+DONE-t 点table改变front-end全局变量，防止快点造成内容加载（画静态表，画图, 因为他们用的是同一区域：table_to_be_filled, canvasArea）混乱。
+DONE-t ARL_IAA  2007-2007 显示0
+DONE ARL_OA_4: The article edited by largest group of registered users. Each wiki article is edited by a number of users 是Registered吗
+DONE ARL_IAA top5 改成regular (估计是没变化) e.g.  Metallica
+
+title name controller split 正则优化
+
+
+ 

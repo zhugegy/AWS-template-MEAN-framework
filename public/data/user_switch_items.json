@@ -1,0 +1,30 @@
+[
+    {
+        "id":"user_switch_item",
+        "link":"../sign-out",
+        "content_en":"sign out",
+        "content_zh-Hans":"注销",
+        "required-user-status": "signed-in"
+    },
+    {
+        "id":"user_switch_item",
+        "link":"../sign-up",
+        "content_en":"sign up",
+        "content_zh-Hans":"注册",
+        "required-user-status": "not-signed-in-obsulate"
+    },
+    {
+        "id":"user_switch_item",
+        "link":"../sign-in",
+        "content_en":"sign in",
+        "content_zh-Hans":"登录",
+        "required-user-status": "not-signed-in-obsulate"
+    },
+    {
+        "id":"user_switch_item",
+        "link":"../login",
+        "content_en":"Log In",
+        "content_zh-Hans":"登录",
+        "required-user-status": "not-signed-in"
+    }
+]

@@ -1,0 +1,14 @@
+  <div id="menuBox">
+
+    <div id="switchUserDropDownMenu">
+      <button id="switchUserDropDownMenuIcon" type="button"></button>
+      <div class="switchUserDropDownContent"></div>
+    </div>
+
+     <ul id="menuItemsList"></ul>
+
+  </div>
+
+  <div id="controlPanelBox"></div>
+  <div id="infoTableBox"></div>
+  <div id="graphCanvasBox"></div>

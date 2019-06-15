@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article Insight</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<!-- Top of the page -->
+	<div class="top">
+		<p class="top_title">Article Insight</p>
+		<input type="button" value="Log In to Existing Account" alt="login" class="form_float button_login1">
+
+		<!-- display the form when click the login button -->
+		<div class="form_login display_none">
+			<form action="/signin" method="post" >
+				<fieldset>
+					<input type="button" value="Log In" class="form_float" id="login">
+					<p class="form_float">
+						<label for="password">Password: </label>
+						<input type="password" name="password" id="password">
+					</p>
+					<p class="form_float">
+						<label for="username">Email: </label>
+						<input type="text" name="username" id="username">
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+	<!-- Register -->
+	<div class="content_container">
+		<div class="middle">
+			<p class="description1">Create a new account</p>
+			<p class="description2">Start your article analystics now!</p>
+			<form action="/signup" method="post">
+				<fieldset>
+					<p>
+						<label for="firstname">First name: </label>
+						<input type="text" name="firstname" id="firstname">
+						<i class = "i_firstname display_none">This is not a valid first name.</i>
+					</p>
+					<p>
+						<label for="lastname">Last name: </label>
+						<input type="text" name="lastname" id="lastname">
+						<i class = "i_lastname display_none">This is not a valid last name.</i>
+					</p>
+					<p>
+						<label for="ai_username">Email: </label>
+						<input type="email" name="ai_username" id="ai_username">
+						<i class = "i_email display_none">This is not a valid email.</i>
+					</p>
+					<p>
+						<label for="ai_password">Password: </label>
+						<input type="password" name="ai_password" id="ai_password">
+						<i class = "i_password display_none">This is not a valid password.</i>
+					</p>
+					<input type="button" value="Sign Up" id="signup">
+					<a href = "../"><input type="button" value="Back" id="back"></a>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	
+	<!-- alert -->
+	<div class="mask display_none"></div>
+	<div class="alert_container display_none">
+		<div class="alert_content"></div>
+		<input type="button" value="OK" alt="close" id="close">
+	</div>
+
+</body>   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+   <script type="text/javascript" src="javascripts/login.js"></script>
+</html>
