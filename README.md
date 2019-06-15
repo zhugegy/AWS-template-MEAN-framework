@@ -1,0 +1,1 @@
+# AWS-template-MEAN-framework
