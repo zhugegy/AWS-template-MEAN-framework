@@ -2,9 +2,9 @@ var mongoose = require("mongoose");
 //var userArray = require("./userArrary");
 //var date = require("./date");
 
-mongoose.connect('mongodb://localhost/wikipedia', { useNewUrlParser: true }, function(){
-    console.log('mongodb connected W')
-});
+//mongoose.connect('mongodb://localhost/wikipedia', { useNewUrlParser: true }, function(){
+//    console.log('mongodb connected W')
+//});
 var revSchema = new mongoose.Schema({
     title: String,
     timestamp:String,
