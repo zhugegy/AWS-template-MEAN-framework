@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 const date = require("./date")
 
-mongoose.connect('mongodb://localhost/wikipedia', { useNewUrlParser: true }, function(){
+//mongoose.connect('mongodb://localhost/wikipedia', { useNewUrlParser: true }, function(){
+//    console.log('mongodb connected')
+//});
+
+mongoose.connect('mongodb://briskwikipedia:3201@ec2-3-219-35-26.compute-1.amazonaws.com:27017/wikipedia', { useNewUrlParser: true }, function(){
     console.log('mongodb connected')
 });
-
 
 let revSchema = new mongoose.Schema({
     title: String,
