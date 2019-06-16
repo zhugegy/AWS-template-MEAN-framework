@@ -33,6 +33,9 @@ app.use('/', articleInsightRouter);
 //yyt
 app.use('/', logInPageRouter);
 
+var proxy = require('express-http-proxy');
+app.use('/proxy', proxy('www.google.com'));
+
 app.listen(3000, function () {
     console.log("listening on port 3000!");
 })
