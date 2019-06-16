@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 //    console.log('mongodb connected')
 //});
 
-mongoose.connect('mongodb://briskwikipedia:3201@ec2-3-219-35-26.compute-1.amazonaws.com:27017/wikipedia', { useNewUrlParser: true }, function(){
+mongoose.connect('mongodb://briskwikipedia:3201@ec2-3-212-186-203.compute-1.amazonaws.com:27017/wikipedia', { useNewUrlParser: true }, function(){
     console.log('mongodb connected')
 });
 
