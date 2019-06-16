@@ -6,7 +6,7 @@ var serverArticleInsights = 'http://3.212.186.203:3001';
 
 app.all("/article_insights/*", function(req, res) {
     console.log('redirecting to serverArticleInsights');
-    apiProxy.web(req, res, {target: serverArticleInsights});
+    apiProxy.web(req, res, {target: serverArticleInsights, changeOrigin: true});
 });
 
 app.listen(3000);
