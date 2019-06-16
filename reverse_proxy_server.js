@@ -33,11 +33,26 @@
 // });
 
 
-
+//
 // var proxy = require('express-http-proxy');
 // var app = require('express')();
 //
-// app.use('/article-insights', proxy('http://3.212.186.203:3001'));
-// app.listen(3000, function () {
-//     console.log("listening on port 3000!");
+// app.use('/article-insights', proxy('www.mutelookout.com'));
+// app.listen(3001, function () {
+//     console.log("listening on port 3001!");
 // })
+
+var http = require("http");
+
+http.createServer(function (request, response) {
+    // Send the HTTP header
+    // HTTP Status: 200 : OK
+    // Content Type: text/plain
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+
+    // Send the response body as "Hello World"
+    response.end('Hello World\n');
+}).listen(2800);
+
+// Console will print the message
+console.log('Server running at http://127.0.0.1:2800/');
