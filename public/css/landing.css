@@ -141,7 +141,7 @@ li.menuItem img{
   margin-left: 14vw;
   
   width: 47vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   padding: 0.1vw;
 
   border-collapse: collapse;
@@ -195,7 +195,7 @@ td.tabContentTable_th{
   background-color: #cce2e9; /* Green background */
   border: 1px solid green; /* Green border */
   //color: black; /* White text */
-  padding: 10px 24px; /* Some padding */
+  padding: 0.1vw 0.2vw; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   width: 27vw; /* Set a width if needed */
   display: block; /* Make the buttons appear below each other */
