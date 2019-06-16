@@ -97,6 +97,7 @@ function control_panel_loaded_inner_callback(strTabName, response)
 
 var g_nMenuClickTimer = 0;
 var g_bNeedSignedIn = false;
+var g_strCurrentSectionName = "introduction";
 
 function menuItems_listener()
 {
@@ -132,8 +133,10 @@ function menuItems_listener()
 		{
 			//alert("Please sign in! This feature is only for registered users");
 			swal("Please log in!", "This feature is only for registered users.", "error");
-			return
+			return;
 		}
+
+		g_strCurrentSectionName = strTmpItemName;
 		load_informative_compenent(strTmpItemName);
     });	
 }
@@ -148,11 +151,16 @@ function graphDrawerButtonItems_listener()
 	strTmpFunctionName = strId;
 	
 	
-	if (strCurrentTitle != "Reserved")
+	if (g_strCurrentSectionName == "individual_article_analytics" && strCurrentTitle == "Reserved")
 	{
-		var objDivCanvas = document.getElementById("canvasArea");
-		objDivCanvas.innerHTML = "<p>Drawing... Please wait...</p>" + "<div class=\"loader\"></div>";
+		//alert("Sorry! Please select an article before drawing the statistic graph.");
+		swal("Sorry!", "Please select an article before drawing the statistic graph.", "error");
+		return;
 	}
+
+	var objDivCanvas = document.getElementById("canvasArea");
+	objDivCanvas.innerHTML = "<p>Drawing... Please wait...</p>" + "<div class=\"loader\"></div>";
+
 	// trick for reducing redundancy coding: call string, as if this string is a function.
 	// see info_table_loaded_inner_callback() for detailed explanation
 	window.settings = {functionName: strTmpFunctionName};
