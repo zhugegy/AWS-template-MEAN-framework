@@ -33,6 +33,7 @@ app.use('/', articleInsightRouter);
 //yyt
 app.use('/', logInPageRouter);
 
+// 20190617 set listening port to 3000, using DNS sub-domain routing in AWS Route 53
 app.listen(3000, function () {
     console.log("listening on port 3000!");
 })
