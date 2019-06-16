@@ -141,7 +141,7 @@ li.menuItem img{
   margin-left: 14vw;
   
   width: 47vw;
-  font-size: 0.8vw;
+  font-size: 1vw;
   padding: 0.1vw;
 
   border-collapse: collapse;
@@ -228,8 +228,10 @@ td.tabContentTable_th{
 
 span.range-slider {
     position: relative;
-    width: 200px;
-    height: 35px;
+    /*width: 200px;*/
+    /*height: 35px;*/
+    width: 20vw;
+    height: 3vw;
     text-align: center;
 }
 
@@ -237,11 +239,13 @@ span.range-slider input {
     pointer-events: none;
     position: absolute;
     overflow: hidden;
-    left: 0;
-    top: 15px;
-    width: 200px;
+    left: 10px;
+    top: 0.02vw;
+    /*width: 200px;*/
+    width: 26vw;
     outline: none;
-    height: 18px;
+    /*height: 18px;*/
+    height: 1.52vw;
     margin: 0;
     padding: 0;
 }
@@ -281,7 +285,8 @@ span.range-slider input[type=range]::-moz-focus-outer {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 100%; /* Full-width */
-  height: 25px; /* Specified height */
+  /*height: 25px; !* Specified height *!*/
+    height: 2.14vw; /* Specified height */
   background: #d3d3d3; /* Grey background */
   outline: none; /* Remove outline */
   //opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
@@ -298,15 +303,19 @@ span.range-slider input[type=range]::-moz-focus-outer {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  /*width: 25px; !* Set a specific slider handle width *!*/
+  /*height: 25px; !* Slider handle height *!*/
+    width: 2.14vw; /* Set a specific slider handle width */
+    height: 2.14vw; /* Slider handle height */
   background: #62cbe9; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
+  /*width: 25px; !* Set a specific slider handle width *!*/
+  /*height: 25px; !* Slider handle height *!*/
+    width: 2.14vw; /* Set a specific slider handle width */
+    height: 2.14vw; /* Slider handle height */
   background: #62cbe9; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
@@ -330,10 +339,30 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    padding:5px 15px; 
+    padding:5px 15px;
+    margin:5px 15px;
     background:#62cbe9; 
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div#infoTableBox, div#controlPanelBox, div#graphCanvasBox {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 100%;
+    }
+
+    #canvasArea, .controlPanelContent, table.tabContentTable, th, td{
+        margin-left: 1vw;
+        width: 95vw;
+    }
+
+    #buttonArea button {
+        margin-left: 1vw;
+        width: 80vw; /* Set a width if needed */
+    }
 }
