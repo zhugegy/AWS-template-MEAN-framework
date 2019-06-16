@@ -514,7 +514,7 @@ function ARL_IAA_0___start_fetching_data_stage_2___(strTitleName, strIsUpToDate,
 	   {
 		   var nUpdatedRevisions = rdata.revisions_updated;
 		   
-		   	newCell.appendChild(document.createTextNode("This data is up-to-date! " + nUpdatedRevisions.toString() + " new revisions is pulled from API!"));
+		   	newCell.appendChild(document.createTextNode("This data is up-to-date! " + nUpdatedRevisions.toString() + " new revisions have been pulled from API!"));
 			newCell.className = "tabContentTable_inlineNotificationGreen";
 			newCell.colSpan = 2;
 			
