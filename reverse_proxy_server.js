@@ -12,6 +12,8 @@
 // app.listen(3000);
 //
 
+
+
 // const httpProxy = require('http-proxy');
 // const http = require('http');
 //
@@ -30,10 +32,12 @@
 //     proxyReq.setHeader('Host', targetHost);
 // });
 
-var proxy = require('express-http-proxy');
-var app = require('express')();
 
-app.use('/article-insights', proxy('http://3.212.186.203:3001'));
-app.listen(3000, function () {
-    console.log("listening on port 3000!");
-})
+
+// var proxy = require('express-http-proxy');
+// var app = require('express')();
+//
+// app.use('/article-insights', proxy('http://3.212.186.203:3001'));
+// app.listen(3000, function () {
+//     console.log("listening on port 3000!");
+// })
