@@ -1,13 +1,22 @@
 const mongoose = require("mongoose");
+var fs = require('fs');
+var path = require("path");
 
 //mongoose.connect('mongodb://localhost/wikipedia', { useNewUrlParser: true }, function(){
 //    console.log('mongodb connected')
 //});
 
-mongoose.connect('mongodb://briskwikipedia:3201@ec2-3-212-186-203.compute-1.amazonaws.com:27017/wikipedia', { useNewUrlParser: true }, function(){
+// file reading for credentials
+var g_strWikipediaCollectionUser = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionUser.txt"), 'utf8').toString().trim();
+var g_strWikipediaCollectionPassword = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionPassword.txt"), 'utf8').toString().trim();
+var g_strWikipediaCollectionIPAddress = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionIPAddress.txt"), 'utf8').toString().trim();
+
+mongoose.connect('mongodb://' +
+    g_strWikipediaCollectionUser + ':' +
+    g_strWikipediaCollectionPassword +
+    '@' +
+    g_strWikipediaCollectionIPAddress, { useNewUrlParser: true }, function(){
     console.log('mongodb connected')
 });
-
-//mongodb://todoAholic:scotchio@ec2-52-0-14-185.compute-1.amazonaws.com:27017/dummyDB
 
 module.exports = mongoose;
