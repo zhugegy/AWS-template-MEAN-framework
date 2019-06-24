@@ -157,6 +157,17 @@ function ARL_OA_0___start_fetching_data___(strRankRange)
 	ARL_OA_7___title_with_shortest_history___();
 }
 
+function get_link_element_with_title(strTitle)
+{
+	var a = document.createElement('a');
+	var linkText = document.createTextNode(strTitle);
+	a.appendChild(linkText);
+	//a.title = "my title text111";
+	a.href = "https://en.wikipedia.org/wiki/" + strTitle.replace(/ /g, "_");
+
+	return a;
+}
+
 function ARL_OA_1___top_n_titles_with_most_revision___(strRankRange)
 {
 	$.getJSON('/getData?FunId=overall_analytics_get_n_titles_with_most_revisions&Param1=' + strRankRange, {paramNum: 1}, function(rdata) {
@@ -174,8 +185,10 @@ function ARL_OA_1___top_n_titles_with_most_revision___(strRankRange)
 		{
 			var newRow = objTable.insertRow(nRowNum);
 			nRowNum += 1;
-			
-			newRow.insertCell(0).appendChild(document.createTextNode(rdata.title_lst[nCounter]));
+
+			var td1 = newRow.insertCell(0);
+			td1.appendChild(get_link_element_with_title(rdata.title_lst[nCounter]));
+
 			newRow.insertCell(1).appendChild(document.createTextNode(rdata.revision_number_lst[nCounter]));
 			nCounter += 1;
 		}
@@ -201,7 +214,7 @@ function ARL_OA_2___top_n_titles_with_least_revision___(strRankRange)
 			var newRow = objTable.insertRow(nRowNum);
 			nRowNum += 1;
 			
-			newRow.insertCell(0).appendChild(document.createTextNode(rdata.title_lst[nCounter]));
+			newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title_lst[nCounter]));
 			newRow.insertCell(1).appendChild(document.createTextNode(rdata.revision_number_lst[nCounter]));
 			nCounter += 1;
 		}
