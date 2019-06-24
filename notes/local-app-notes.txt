@@ -1,0 +1,2 @@
+sudo apt-get install imagemagick
+# used for image crop after it is collected from screenshot API service.

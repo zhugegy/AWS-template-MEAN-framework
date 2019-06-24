@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84272e69-003d-44f8-b18c-00607685d881" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models/connectDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/connectDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/establishOverallCollections.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/establishOverallCollections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/api-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/api-notes.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +31,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/images/background_paper.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/notes/api-notes.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/notes/local-app-notes.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -60,20 +73,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/connectDB.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
               <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/main_frame.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -146,10 +150,11 @@
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_author_analytics.html" />
         <option value="$PROJECT_DIR$/public/javascripts/table_filler.js" />
         <option value="$PROJECT_DIR$/reverse_proxy_server.js" />
-        <option value="$PROJECT_DIR$/notes/api-notes.txt" />
         <option value="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" />
         <option value="$PROJECT_DIR$/app/models/establishOverallCollections.js" />
         <option value="$PROJECT_DIR$/app/models/connectDB.js" />
+        <option value="$PROJECT_DIR$/notes/api-notes.txt" />
+        <option value="$PROJECT_DIR$/notes/local-app-notes.txt" />
       </list>
     </option>
   </component>
@@ -281,12 +286,12 @@
       <workItem from="1560811911771" duration="584000" />
       <workItem from="1561000970208" duration="4609000" />
       <workItem from="1561332888880" duration="4152000" />
-      <workItem from="1561338452570" duration="3114000" />
+      <workItem from="1561338452570" duration="4296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31294000" />
+    <option name="totallyTimeSpent" value="32476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -462,13 +467,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/authorAnalytics.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/api-notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/steps_for_importing_new_data.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -547,6 +545,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/api-notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/local-app-notes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
