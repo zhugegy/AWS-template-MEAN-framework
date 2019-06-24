@@ -7,15 +7,13 @@ var path = require("path");
 //});
 
 // file reading for credentials
-var g_strWikipediaCollectionUser = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionUser.txt"), 'utf8').toString().trim();
-var g_strWikipediaCollectionPassword = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionPassword.txt"), 'utf8').toString().trim();
-var g_strWikipediaCollectionIPAddress = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionIPAddress.txt"), 'utf8').toString().trim();
+var g_strWikipediaCollectionCredential = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionCredentialDetails.txt"), 'utf8').toString().split("\n");
 
 mongoose.connect('mongodb://' +
-    g_strWikipediaCollectionUser + ':' +
-    g_strWikipediaCollectionPassword +
+    g_strWikipediaCollectionCredential[1].trim() + ':' +
+    g_strWikipediaCollectionCredential[2].trim() +
     '@' +
-    g_strWikipediaCollectionIPAddress, { useNewUrlParser: true }, function(){
+    g_strWikipediaCollectionCredential[0].trim(), { useNewUrlParser: true }, function(){
     console.log('mongodb connected')
 });
 
