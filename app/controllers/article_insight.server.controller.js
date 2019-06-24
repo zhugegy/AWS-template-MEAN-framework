@@ -1,6 +1,8 @@
-
 var express = require('express');
 var fs = require('fs');
+var path = require("path");
+var exec = require('child_process').exec;
+
 //var ModelOperationsZ = require("../models/mongoDBZ")
 //var ModelOperationsW = require("../models/mongoDBW")
 var ModelOperationsWOA = require("../models/overallAnalytics")
@@ -23,6 +25,11 @@ var g_aryAdminInactive = fs.readFileSync(__dirname + g_constUserTypeDirName + 'a
 var g_aryAdminSemiActive = fs.readFileSync(__dirname + g_constUserTypeDirName + 'admin_semi_active.txt','utf8').toString().split("\n");
 var g_aryBot = fs.readFileSync(__dirname + g_constUserTypeDirName + 'bot.txt','utf8').toString().split("\n");
 
+
+// file reading for credentials
+var g_strThumbnailwsAPIKey = fs.readFileSync(path.join(path.resolve("public"), "credentials/ThumbnailwsAPIKey.txt"), 'utf8').toString().trim();
+//console.log(g_strThumbnailwsAPIKey);
+
 // ## Data manipulation
 
 // Handler encapsulates all the MongoDB related functions.
@@ -31,7 +38,52 @@ var Handler={};
 Handler.overall_analytics_get_n_titles_with_most_revisions = async (strRankNumber, req, res) => {
 	//let objTmp = await ModelOperationsZ.overall_analytics_get_n_titles_with_most_revisions(strRankNumber);	
 	let objTmp = await ModelOperationsWOA.overall_analytics_get_n_titles_with_most_revisionsAsync(strRankNumber);
+
+	check_screenshot(objTmp['title_lst']);
+
 	res.json(objTmp);
+}
+
+function check_screenshot(lstObjArticles)
+{
+	var publicPath = path.resolve("public");
+
+	for (var i = 0; i < lstObjArticles.length; i++)
+	{
+		var strPicPath = path.join(publicPath, "images/website_screenshot/" + lstObjArticles[i] + ".jpeg");
+
+		fs.stat(strPicPath, function(err, stats)
+		{
+			if (stats == null)
+			{
+				//console.log(err.path);
+				var nIndexStart = err.path.lastIndexOf("/") + 1;
+				var nIndexEnd = err.path.lastIndexOf(".jpeg");
+				var strTitleName = err.path.slice(nIndexStart, nIndexEnd);
+				var strTitleNameProcessed = strTitleName.replace(/ /g, "%5F");
+				//console.log(strTitleNameProcessed);
+
+				var strTmp = "curl \"https://api.thumbnail.ws/api/" +
+					g_strThumbnailwsAPIKey +
+					"/thumbnail/get?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2F" +
+					strTitleNameProcessed + "&width=640\" > " + "\"" + err.path + "\"" +
+					" && " +
+					"convert " + "\"" + err.path + "\"" + " -crop 545x345+95+15 " + "\"" + err.path + "\"";
+
+				// "echo ab > " + "\"" + err.path.replace(".jpeg", ".txt") + "\""
+
+				var child = exec(strTmp,
+					(error, stdout, stderr) =>
+					{
+						if (error !== null)
+						{
+							console.log(`exec error: ${error}`);
+						}
+					});
+			}
+		});
+
+	}
 }
 
 Handler.overall_analytics_get_n_titles_with_least_revisions = async (strRankNumber, req, res) => {
@@ -473,6 +525,7 @@ function construct_landing_page_meta_data(sess)
 	
 	return restruct_landing_page_meta_data(objMetaData, sess);
 }
+
 
 
 // ## obsolete functions
