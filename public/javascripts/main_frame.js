@@ -137,6 +137,9 @@ function menuItems_listener()
 		}
 
 		g_strCurrentSectionName = strTmpItemName;
+		$.getJSON('/getData?FunId=miscellaneous_change_session_tab_name&Param1=' + strTmpItemName, {paramNum: 1}, function(rdata) {
+
+		});
 		load_informative_compenent(strTmpItemName);
     });	
 }
@@ -324,11 +327,16 @@ function load_body_content()
 	fetch_data_and_render('../data/user_switch_items.json', action_with_user_switch_data);	
 	
 	// get dynamic data (from MongoDB) and display informative content (controlPanel + infoTable + graphCanvas)
-	var strGhost = document.getElementById("ghostInfo").innerHTML;
-	var objTmp = JSON.parse(strGhost);
-	var strCurrentUserTab = objTmp["tab_name"];
-	
-	load_informative_compenent(strCurrentUserTab);
+	// obsolete:
+	// var strGhost = document.getElementById("ghostInfo").innerHTML;
+	// var objTmp = JSON.parse(strGhost);
+	// var strCurrentUserTab = objTmp["tab_name"];
+	// current: (get tab_name from server (via session))
+
+	$.getJSON('/getData?FunId=miscellaneous_get_session_tab_name', {paramNum: 0}, function(rdata) {
+		var strCurrentUserTab = rdata["tab_name"];
+		load_informative_compenent(strCurrentUserTab);
+	});
 }
 
 /* Reason of having HTMLBodyBackbone.txt as the backbone:

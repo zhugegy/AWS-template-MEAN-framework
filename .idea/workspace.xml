@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84272e69-003d-44f8-b18c-00607685d881" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/notes/api-notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/api-notes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/table_filler.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/table_filler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/main_frame.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/main_frame.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="409" column="76" lean-forward="true" selection-start-line="409" selection-start-column="76" selection-end-line="409" selection-end-column="76" />
+            <state relative-caret-position="304">
+              <caret line="292" column="35" lean-forward="true" selection-start-line="292" selection-start-column="35" selection-end-line="292" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/main_frame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="328" column="44" selection-start-line="328" selection-start-column="36" selection-end-line="328" selection-end-column="44" />
+            <state relative-caret-position="293">
+              <caret line="338" column="7" selection-start-line="338" selection-start-column="7" selection-end-line="338" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/table_filler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
+            <state relative-caret-position="330">
+              <caret line="200" column="89" selection-start-line="200" selection-start-column="81" selection-end-line="200" selection-end-column="89" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -132,6 +132,7 @@
       <find>pulled</find>
       <find>overall</find>
       <find>console</find>
+      <find>mis</find>
       <find>tab_name</find>
     </findStrings>
   </component>
@@ -141,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/main_frame.js" />
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_introduction.html" />
         <option value="$PROJECT_DIR$/public/css/login.css" />
         <option value="$PROJECT_DIR$/public/css/landing.css" />
@@ -153,12 +153,13 @@
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_overall_analytics.html" />
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_author_analytics.html" />
         <option value="$PROJECT_DIR$/reverse_proxy_server.js" />
-        <option value="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" />
         <option value="$PROJECT_DIR$/app/models/establishOverallCollections.js" />
         <option value="$PROJECT_DIR$/app/models/connectDB.js" />
         <option value="$PROJECT_DIR$/notes/local-app-notes.txt" />
         <option value="$PROJECT_DIR$/notes/api-notes.txt" />
         <option value="$PROJECT_DIR$/public/javascripts/table_filler.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/main_frame.js" />
+        <option value="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" />
       </list>
     </option>
   </component>
@@ -290,12 +291,12 @@
       <workItem from="1560811911771" duration="584000" />
       <workItem from="1561000970208" duration="4609000" />
       <workItem from="1561332888880" duration="4152000" />
-      <workItem from="1561338452570" duration="6433000" />
+      <workItem from="1561338452570" duration="8520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34613000" />
+    <option name="totallyTimeSpent" value="36700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -306,10 +307,10 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.41283125" visible="true" weight="0.1990232" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.41283125" visible="true" weight="0.1990232" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27040815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27040815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -542,27 +543,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/table_filler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="200" column="89" selection-start-line="200" selection-start-column="81" selection-end-line="200" selection-end-column="89" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/main_frame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="328" column="44" selection-start-line="328" selection-start-column="36" selection-end-line="328" selection-end-column="44" />
+        <state relative-caret-position="293">
+          <caret line="338" column="7" selection-start-line="338" selection-start-column="7" selection-end-line="338" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="409" column="76" lean-forward="true" selection-start-line="409" selection-start-column="76" selection-end-line="409" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/table_filler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="292" column="35" lean-forward="true" selection-start-line="292" selection-start-column="35" selection-end-line="292" selection-end-column="35" />
         </state>
       </provider>
     </entry>

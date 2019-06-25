@@ -284,6 +284,29 @@ Handler.miscellaneous_get_session_user_stauts = async (req, res) => {
 	res.json(objTmp);
 }
 
+Handler.miscellaneous_get_session_tab_name = async (req, res) => {
+	sess = req.session;
+	let objMetaDataTmp = construct_landing_page_meta_data(sess);
+	strCurrentTabName = objMetaDataTmp["tab_name"];
+
+	let objTmp = {
+		tab_name: strCurrentTabName
+	};
+
+	res.json(objTmp);
+}
+
+Handler.miscellaneous_change_session_tab_name = async (strTabName, req, res) => {
+	sess = req.session;
+	sess["tab_name"] = strTabName;
+
+	let objTmp = {
+		void: "void"
+	};
+
+	res.json(objTmp);
+}
+
 Handler.miscellaneous_get_session_user_identification = async (req, res) => {
 	sess = req.session;
 	let objMetaDataTmp = construct_landing_page_meta_data(sess);
