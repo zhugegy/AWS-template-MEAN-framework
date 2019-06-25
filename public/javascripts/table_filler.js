@@ -42,7 +42,8 @@ function overall_analytics_fill_in_table()
 	var strGhost = document.getElementById("ghostInfo").innerHTML;
 	var objTmp = JSON.parse(strGhost);
 	var strRankRange = objTmp["overall_analytics_rank_range"];
-		
+
+	g_bTabSwitchLock = true;
 	ARL_OA_0___pre_check_user_input___(strRankRange);
 }
 
@@ -142,7 +143,9 @@ function ARL_OA_0___pre_occupy_rows___(strRankRange)
 			"Title", 
 			"History (Age)",
 			g_ConstStrRowId_two_title_with_shortest_history);
-		
+
+	g_bTabSwitchLock = false;
+
 	ARL_OA_0___start_fetching_data___(strRankRange);
 }
 
@@ -162,8 +165,18 @@ function get_link_element_with_title(strTitle)
 	var a = document.createElement('a');
 	var linkText = document.createTextNode(strTitle);
 	a.appendChild(linkText);
-	//a.title = "my title text111";
+	a.classList.add('tooltip');
 	a.href = "https://en.wikipedia.org/wiki/" + strTitle.replace(/ /g, "_");
+
+	var sp = document.createElement('span');
+	sp.classList.add('tooltiptext');
+
+	var img = document.createElement('img');
+	img.src = "../images/website_screenshot/" + strTitle + ".jpeg";
+	img.alt = "Image (article snapshot) is being fetched from WikiPedia...Please try again later!";
+
+	sp.appendChild(img);
+	a.appendChild(sp);
 
 	return a;
 }
@@ -186,8 +199,8 @@ function ARL_OA_1___top_n_titles_with_most_revision___(strRankRange)
 			var newRow = objTable.insertRow(nRowNum);
 			nRowNum += 1;
 
-			var td1 = newRow.insertCell(0);
-			td1.appendChild(get_link_element_with_title(rdata.title_lst[nCounter]));
+			newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title_lst[nCounter]));
+
 
 			newRow.insertCell(1).appendChild(document.createTextNode(rdata.revision_number_lst[nCounter]));
 			nCounter += 1;
@@ -335,7 +348,8 @@ function individual_article_analytics_fill_in_table()
 	{
 		return;
 	}
-	
+
+	g_bTabSwitchLock = true;
 	ARL_IAA_0___valid_title___(strTitleName);
 }
 
@@ -428,7 +442,9 @@ function ARL_IAA_0___pre_occupy_rows___(strTitleName)
 			"Name", 
 			"Revisions",
 			g_ConstStrRowId_article_top_contributors);
-	
+
+	g_bTabSwitchLock = false;
+
 	ARL_IAA_0___start_fetching_data_stage_1___(strTitleName);
 }
 
@@ -686,6 +702,8 @@ function author_analytics_fill_in_table()
 	{
 		return;
 	}
+
+	g_bTabSwitchLock = true;
 	
 	// change the input box, to achieve UI consistency. 
 	var objInputBox = document.getElementById("controlPanelTextInputAuthorName");
@@ -714,7 +732,8 @@ function ARL_AA_0___pre_occupy_rows___(strAuthorName)
         "<tr id = \"" + g_ConstStrRowId_author_contribution_info + "\">" +  /* important: row id is here for later reference */
         "<td>" + "<div class=\"loader\"></div>" +  "</td>" +
         "</tr>";
-	
+
+	g_bTabSwitchLock = false;
 	ARL_IAA_0___start_fetching_data___(strAuthorName);
 }
 

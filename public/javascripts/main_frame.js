@@ -95,12 +95,13 @@ function control_panel_loaded_inner_callback(strTabName, response)
 	window[settings.functionName]();  
 }
 
-var g_nMenuClickTimer = 0;
+//var g_nMenuClickTimer = 0;
 var g_bNeedSignedIn = false;
 var g_strCurrentSectionName = "introduction";
 
 function menuItems_listener()
 {
+	// obsolete:
 	// check if the user has clicked way way too quickly (3 seconds interval for swtiching tabs)
 	/* 
 	 * Reason: to avoid mis-placement of table and canvas contents, as table and canvas are "public-shared" area for all tabs.
@@ -110,16 +111,26 @@ function menuItems_listener()
 	 * 								 button -> in 0.5 seconds, click OA menu button -> wait to see IAA table displayed in the
 	 * 								 OA tab, which is not cool and should be avoided.
 	*/
-	var nCurrentTime = new Date().getTime();
-	if (nCurrentTime - g_nMenuClickTimer < 3 * 1000)
+
+	// var nCurrentTime = new Date().getTime();
+	// if (nCurrentTime - g_nMenuClickTimer < 3 * 1000)
+	// {
+	// 	//alert("too quick!");
+	// 	return;
+	// }
+	// else
+	// {
+	// 	g_nMenuClickTimer = nCurrentTime;
+	// }
+
+	// current: using a global variable: g_bTabSwitchLock
+
+	if (g_bTabSwitchLock == true)
 	{
-		//alert("too quick!");
+		//alert("locked!");
 		return;
 	}
-	else
-	{
-		g_nMenuClickTimer = nCurrentTime;
-	}
+
 	
 	// check user status: no functionality available for a guest. except for the Introduction tab. :-)
 	
@@ -138,8 +149,8 @@ function menuItems_listener()
 
 		g_strCurrentSectionName = strTmpItemName;
 		$.getJSON('/getData?FunId=miscellaneous_change_session_tab_name&Param1=' + strTmpItemName, {paramNum: 1}, function(rdata) {
-
 		});
+
 		load_informative_compenent(strTmpItemName);
     });	
 }
