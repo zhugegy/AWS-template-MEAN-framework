@@ -39,7 +39,7 @@ Handler.overall_analytics_get_n_titles_with_most_revisions = async (strRankNumbe
 	//let objTmp = await ModelOperationsZ.overall_analytics_get_n_titles_with_most_revisions(strRankNumber);	
 	let objTmp = await ModelOperationsWOA.overall_analytics_get_n_titles_with_most_revisionsAsync(strRankNumber);
 
-	check_screenshot(objTmp['title_lst']);
+	//check_screenshot(objTmp['title_lst']);
 
 	res.json(objTmp);
 }

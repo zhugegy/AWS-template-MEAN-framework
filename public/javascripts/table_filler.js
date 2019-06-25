@@ -174,7 +174,7 @@ function get_link_element_with_title(strTitle)
 	var img = document.createElement('img');
 	img.src = "../images/website_screenshot/" + strTitle + ".jpeg";
 	img.classList.add('tooltipimg');
-	img.alt = "Image (article snapshot) is being fetched from WikiPedia...Please try again later!";
+	img.alt = "No image yet...";
 
 	sp.appendChild(img);
 	a.appendChild(sp);
@@ -247,7 +247,7 @@ function ARL_OA_4___title_with_most_users___()
 		
 		var objTable = document.getElementById("table_content_tobefilled");
 		var newRow = objTable.insertRow(nAnchorIndex);
-		newRow.insertCell(0).appendChild(document.createTextNode(rdata.title));
+		newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title));
 		newRow.insertCell(1).appendChild(document.createTextNode(rdata.user_count));
     });
 }
@@ -263,7 +263,7 @@ function ARL_OA_5___title_with_least_users___()
 		
 		var objTable = document.getElementById("table_content_tobefilled");
 		var newRow = objTable.insertRow(nAnchorIndex);
-		newRow.insertCell(0).appendChild(document.createTextNode(rdata.title));
+		newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title));
 		newRow.insertCell(1).appendChild(document.createTextNode(rdata.user_count));
     });
 }
@@ -280,7 +280,7 @@ function ARL_OA_6___two_title_with_longest_history___()
 		var objTable = document.getElementById("table_content_tobefilled");
 		
 		var newRow = objTable.insertRow(nAnchorIndex);
-		newRow.insertCell(0).appendChild(document.createTextNode(rdata.title_lst[0]));
+		newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title_lst[0]));
 		
 		var secondsPre = new Date(rdata.age_lst[0]).getTime() / 1000;
 		var secondsNow = Date.now() / 1000 | 0;
@@ -290,7 +290,7 @@ function ARL_OA_6___two_title_with_longest_history___()
 				strTimeGap));
 		
 		var newRow = objTable.insertRow(nAnchorIndex + 1);
-		newRow.insertCell(0).appendChild(document.createTextNode(rdata.title_lst[1]));
+		newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title_lst[1]));
 		
 		secondsPre = new Date(rdata.age_lst[1]).getTime() / 1000;
 		secondsDiffer = secondsNow - secondsPre;
@@ -312,7 +312,7 @@ function ARL_OA_7___title_with_shortest_history___()
 		var objTable = document.getElementById("table_content_tobefilled");
 		
 		var newRow = objTable.insertRow(nAnchorIndex);
-		newRow.insertCell(0).appendChild(document.createTextNode(rdata.title));
+		newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.title));
 		
 		var secondsPre = new Date(rdata.age).getTime() / 1000;
 		var secondsNow = Date.now() / 1000 | 0;
@@ -622,7 +622,7 @@ function ARL_IAA_2___article_basic_information___(strTitleName, strStartYear, st
 		var date = new Date(rdata.last_timestamp);	
 		
 		var newRow = objTable.insertRow(nAnchorIndex);
-		newRow.insertCell(0).appendChild(document.createTextNode(strTitleName));
+		newRow.insertCell(0).appendChild(get_link_element_with_title(strTitleName));
 		newRow.insertCell(1).appendChild(document.createTextNode(rdata.revisions.toString()));
     });
 }
@@ -777,7 +777,7 @@ function ARL_AA_1___author_contribution_info___(strAuthorName)
 			
 			nRowNum += 1;
 			
-			newRow.insertCell(0).appendChild(document.createTextNode(rdata.contributed_article_lst[nCounter]));
+			newRow.insertCell(0).appendChild(get_link_element_with_title(rdata.contributed_article_lst[nCounter]));
 			newRow.insertCell(1).appendChild(document.createTextNode(rdata.revision_number_lst[nCounter]));
 			
 			var div = document.createElement("DIV");   
