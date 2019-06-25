@@ -349,25 +349,6 @@ input[type=submit] {
     border-radius: 5px; 
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    div#infoTableBox, div#controlPanelBox, div#graphCanvasBox {
-        margin-left: 1vw;
-        margin-right: 1vw;
-        width: 100%;
-    }
-
-    #canvasArea, .controlPanelContent, table.tabContentTable, th, td{
-        margin-left: 1vw;
-        width: 95vw;
-    }
-
-    #buttonArea button {
-        margin-left: 1vw;
-        width: 80vw; /* Set a width if needed */
-    }
-}
-
 .tooltip {
     position: relative;
     display: inline-block;
@@ -411,4 +392,31 @@ input[type=submit] {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div#infoTableBox, div#controlPanelBox, div#graphCanvasBox {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 100%;
+    }
+
+    #canvasArea, .controlPanelContent, table.tabContentTable, th, td{
+        margin-left: 1vw;
+        width: 95vw;
+    }
+
+    #buttonArea button {
+        margin-left: 1vw;
+        width: 80vw; /* Set a width if needed */
+    }
+
+    .tooltip .tooltiptext {
+        margin-left: 5px;
+    }
+
+    .tooltip .tooltiptext::after {
+        margin-left: 5px;
+    }
 }
