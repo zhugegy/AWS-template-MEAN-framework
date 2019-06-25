@@ -173,6 +173,7 @@ function get_link_element_with_title(strTitle)
 
 	var img = document.createElement('img');
 	img.src = "../images/website_screenshot/" + strTitle + ".jpeg";
+	img.classList.add('tooltipimg');
 	img.alt = "Image (article snapshot) is being fetched from WikiPedia...Please try again later!";
 
 	sp.appendChild(img);

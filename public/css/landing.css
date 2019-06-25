@@ -391,6 +391,12 @@ input[type=submit] {
     transition: opacity 0.3s;
 }
 
+
+.tooltipimg
+{
+    width:40vw;
+}
+
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;
