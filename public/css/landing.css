@@ -444,4 +444,8 @@ input[type=submit] {
     .tooltip .tooltiptext::after {
         margin-left: 5px;
     }
+
+    .icon-bar {
+        top: 95%;
+    }
 }
