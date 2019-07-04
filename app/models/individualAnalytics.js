@@ -35,7 +35,7 @@ module.exports.individual_article_analytics_get_title_contributing_infoAsync = f
 	number = parseInt(number);
 	const aggregatorOpts = [
         {$match:{
-        	"user_type":"regular",
+        	/*"user_type":"regular",*/
             "title":title,
         "timestamp":{$gt: startYear,$lt: endYear}}
         },
