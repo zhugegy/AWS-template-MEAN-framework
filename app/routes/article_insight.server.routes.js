@@ -7,6 +7,7 @@ router.get('/getData', controller.constructData);
 router.get('/sign-in', controller.signIn);
 router.get('/sign-out', controller.signOut);
 
+router.get('/add-article', controller.showAddArticle);
 
 router.post('/OverallAnalyticsControlPanel', controller.OverallAnalyticsControlPanel);
 router.post('/IndividualArticleAnalyticsControlPanel', controller.IndividualArticleAnalyticsControlPanel);

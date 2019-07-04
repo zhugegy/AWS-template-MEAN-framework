@@ -1,0 +1,14 @@
+input[type=button] {
+    padding:5px 15px;
+    margin:5px 15px;
+    background:#62cbe9;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    background: #cccccc;
+}

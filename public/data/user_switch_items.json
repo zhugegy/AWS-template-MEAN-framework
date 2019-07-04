@@ -1,8 +1,14 @@
-[
+[    {
+        "id":"user_switch_item",
+        "link":"../add-article\" target=\"_blank",
+        "content_en":"Add Article",
+        "content_zh-Hans":"增加文章",
+        "required-user-status": "signed-in-obsulate"
+    },
     {
         "id":"user_switch_item",
         "link":"../sign-out",
-        "content_en":"sign out",
+        "content_en":"Sign Out",
         "content_zh-Hans":"注销",
         "required-user-status": "signed-in"
     },

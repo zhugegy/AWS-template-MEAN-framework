@@ -575,6 +575,7 @@ function ARL_IAA_0___start_fetching_data_stage_3___(strTitleName)
 	var objTmp = JSON.parse(strGhost);
 	var strStartYear = objTmp["individual_article_analytics_start_year"];
 	var strEndYear = objTmp["individual_article_analytics_end_year"];
+	strEndYear = (parseInt(strEndYear) + 1).toString();
 	
 	ARL_IAA_1___update_check_after_query___(strTitleName);
 	ARL_IAA_2___article_basic_information___(strTitleName, strStartYear, strEndYear);

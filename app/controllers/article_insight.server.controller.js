@@ -186,89 +186,171 @@ Handler.individual_article_analytics_get_user_distributionAsync = async (strYear
 //simulate querying (sleep)
 //let a = await __tmp_sleep();
 
-Handler.miscellaneous_fetch_data_from_wikipedia = async (strArticleName, strIsUpToDate, strLastTimeStamp, req, res) => {	
+Handler.miscellaneous_fetch_data_from_wikipedia = async (strArticleName, strIsUpToDate, strLastTimeStamp, req, res) => {
 	if (strIsUpToDate == "1")
 	{
 		let objTmpNoMeaning = {
-				noMeaning: "hello"
-				};
-		
+			noMeaning: "hello"
+		};
+
 		res.json(objTmpNoMeaning);
 	}
-	
+
 	if (strIsUpToDate == "0")
 	{
 		// call API
-		let lstObjRevisons = await APIOperationsZ.pull_data_from_API(strArticleName, strLastTimeStamp);
-		
+		let lstObjRevisons = await APIOperationsZ.pull_data_from_API(strArticleName, strLastTimeStamp, "Reserved");
+
 		lstObjRevisons.splice(0, 1);  // remove the first one
-		
-        for (var i = 0; i < lstObjRevisons.length; i++)
-    	{
-        	lstObjRevisons[i].title = strArticleName;
-        	
-        	// determine user type
-        	if ('anon' in lstObjRevisons[i])
-    		{
-        		//console.log("anon happened!");
-        		lstObjRevisons[i].user_type = "anon";
-    		}
-        	else if ('user' in lstObjRevisons[i])
-    		{
-        		var strUserName = lstObjRevisons[i].user;
-        		if (g_aryAdminActive.includes(strUserName) == true)
-    			{
-        			lstObjRevisons[i].user_type = "admin_active";
-    			}
-        		else if (g_aryAdminFormer.includes(strUserName) == true)
-    			{
-        			lstObjRevisons[i].user_type = "admin_former";
-    			}
-        		else if (g_aryAdminInactive.includes(strUserName) == true)
-    			{
-        			lstObjRevisons[i].user_type = "admin_inactive";
-    			}
-        		else if (g_aryAdminSemiActive.includes(strUserName) == true)
-    			{
-        			lstObjRevisons[i].user_type = "admin_semi_active";
-    			}
-        		else if (g_aryBot.includes(strUserName) == true)
-    			{
-        			lstObjRevisons[i].user_type = "bot";
-    			}
-        		else
-    			{
-        			lstObjRevisons[i].user_type = "regular";
-    			}
-    		}
-        	else if ('userhidden' in lstObjRevisons[i])
-    		{
-        		//console.log("hidden happened!");
-        		lstObjRevisons[i].user_type = "hidden";
-    		}
-        	
-        	//console.log("usertype:" + lstObjRevisons[i].user_type);
-    	}
-		
+
+		for (var i = 0; i < lstObjRevisons.length; i++)
+		{
+			lstObjRevisons[i].title = strArticleName;
+
+			// determine user type
+			if ('anon' in lstObjRevisons[i])
+			{
+				//console.log("anon happened!");
+				lstObjRevisons[i].user_type = "anon";
+			}
+			else if ('user' in lstObjRevisons[i])
+			{
+				var strUserName = lstObjRevisons[i].user;
+				if (g_aryAdminActive.includes(strUserName) == true)
+				{
+					lstObjRevisons[i].user_type = "admin_active";
+				}
+				else if (g_aryAdminFormer.includes(strUserName) == true)
+				{
+					lstObjRevisons[i].user_type = "admin_former";
+				}
+				else if (g_aryAdminInactive.includes(strUserName) == true)
+				{
+					lstObjRevisons[i].user_type = "admin_inactive";
+				}
+				else if (g_aryAdminSemiActive.includes(strUserName) == true)
+				{
+					lstObjRevisons[i].user_type = "admin_semi_active";
+				}
+				else if (g_aryBot.includes(strUserName) == true)
+				{
+					lstObjRevisons[i].user_type = "bot";
+				}
+				else
+				{
+					lstObjRevisons[i].user_type = "regular";
+				}
+			}
+			else if ('userhidden' in lstObjRevisons[i])
+			{
+				//console.log("hidden happened!");
+				lstObjRevisons[i].user_type = "hidden";
+			}
+
+			//console.log("usertype:" + lstObjRevisons[i].user_type);
+		}
+
 		// call into Model (write operation)
-        if (lstObjRevisons.length > 0)
-    	{
-    		//1st not await
-        	ModelOperationsWID.insertRevisionsData(lstObjRevisons);
-        	//2nd await
-        	let tmp = await ModelOperationsWUOD.checkOverallInfo();
-    	}
-        
-        //console.log(ModelOperationsWUA.admin_inactive);
+		if (lstObjRevisons.length > 0)
+		{
+			//1st not await
+			ModelOperationsWID.insertRevisionsData(lstObjRevisons);
+			//2nd await
+			let tmp = await ModelOperationsWUOD.checkOverallInfo();
+		}
+
+		//console.log(ModelOperationsWUA.admin_inactive);
 
 
 		let objTmp =
-		{
+			{
 				revisions_updated: lstObjRevisons.length
-		}
-		
+			}
+
 		res.json(objTmp);
 	}
+}
+
+Handler.miscellaneous_trying_fetch_first_data_from_wikipedia = async (strArticleName, req, res) => {
+	// call API
+	let lstObjRevisons = await APIOperationsZ.pull_data_from_API(strArticleName, "Reserved", "1");
+
+	if (lstObjRevisons == null)
+	{
+		let objTmp =
+			{
+				revisions_updated: -1
+			}
+
+		res.json(objTmp);
+		return;
+	}
+
+	for (var i = 0; i < lstObjRevisons.length; i++)
+	{
+		lstObjRevisons[i].title = strArticleName;
+
+		// determine user type
+		if ('anon' in lstObjRevisons[i])
+		{
+			//console.log("anon happened!");
+			lstObjRevisons[i].user_type = "anon";
+		}
+		else if ('user' in lstObjRevisons[i])
+		{
+			var strUserName = lstObjRevisons[i].user;
+			if (g_aryAdminActive.includes(strUserName) == true)
+			{
+				lstObjRevisons[i].user_type = "admin_active";
+			}
+			else if (g_aryAdminFormer.includes(strUserName) == true)
+			{
+				lstObjRevisons[i].user_type = "admin_former";
+			}
+			else if (g_aryAdminInactive.includes(strUserName) == true)
+			{
+				lstObjRevisons[i].user_type = "admin_inactive";
+			}
+			else if (g_aryAdminSemiActive.includes(strUserName) == true)
+			{
+				lstObjRevisons[i].user_type = "admin_semi_active";
+			}
+			else if (g_aryBot.includes(strUserName) == true)
+			{
+				lstObjRevisons[i].user_type = "bot";
+			}
+			else
+			{
+				lstObjRevisons[i].user_type = "regular";
+			}
+		}
+		else if ('userhidden' in lstObjRevisons[i])
+		{
+			//console.log("hidden happened!");
+			lstObjRevisons[i].user_type = "hidden";
+		}
+
+		//console.log("usertype:" + lstObjRevisons[i].user_type);
+	}
+
+	// call into Model (write operation)
+	if (lstObjRevisons.length > 0)
+	{
+		//1st not await
+		ModelOperationsWID.insertRevisionsData(lstObjRevisons);
+		//2nd await
+		let tmp = await ModelOperationsWUOD.checkOverallInfo();
+	}
+
+	//console.log(ModelOperationsWUA.admin_inactive);
+	let objTmp =
+		{
+			revisions_updated: lstObjRevisons.length
+		}
+
+	check_screenshot([strArticleName]);
+
+	res.json(objTmp);
 }
 
 
@@ -388,6 +470,14 @@ module.exports.showLanding = function(req, res)
     res.render('landing.ejs', {strGhostInfo: strGhostInfo});
 };
 
+module.exports.showAddArticle = function(req, res)
+{
+	sess = req.session;
+	//strGhostInfo = JSON.stringify(construct_landing_page_meta_data(sess))
+
+	res.render('add-article.ejs', {sessionUserID: construct_landing_page_meta_data(sess)["user_identification"]});
+};
+
 module.exports.signOut = function(req, res)
 {
 	sess = req.session;
@@ -480,8 +570,6 @@ module.exports.AuthorAnalyticsControlPanel = function(req, res) {
 	strGhostInfo = JSON.stringify(construct_landing_page_meta_data(sess))
     res.render('landing.ejs', {strGhostInfo: strGhostInfo});
 };
-
-
 
 // ## utilty functions
 

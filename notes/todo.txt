@@ -27,8 +27,8 @@ DONE-t 点table改变front-end全局变量，防止快点造成内容加载（�
 DONE-t ARL_IAA  2007-2007 显示0
 DONE ARL_OA_4: The article edited by largest group of registered users. Each wiki article is edited by a number of users 是Registered吗
 DONE ARL_IAA top5 改成regular (估计是没变化) e.g.  Metallica
+DONE add article名字里有特殊符号，比如()，会找不到此文章
 
 title name controller split 正则优化
-
-
- 
+article fetching加锁，避免IAA重复fetching重复的revisons
+用户名，密码 tab修正
