@@ -413,6 +413,10 @@ input[type=submit] {
     font-size: 20px;
 }
 
+.iconBarImage {
+    width:40px;
+}
+
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
     background-color: #62cbe9;
@@ -447,5 +451,8 @@ input[type=submit] {
 
     .icon-bar {
         top: 10%;
+    }
+    .iconBarImage {
+        width:18px;
     }
 }
