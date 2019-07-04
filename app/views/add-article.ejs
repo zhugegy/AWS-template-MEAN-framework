@@ -15,16 +15,29 @@
 	
     <p> You are logged in as <b> <%= sessionUserID %> </b>.</p>
 
-    Article Title (case insensitve, split words with space):
-    <br>
+    <p>
+        Please input the title to be added into our database:
+        <br>
+        <small>
+            How about "German Shepherd Dog", "French Bulldog", "Golden Retriever"...
+            <br>
+            <i>(case insensitve, split words with space)</i>
+        </small>
+    </p>
+
     <input type="text" id="AddArticleFormTextInputArticleTitle" size="73"> &nbsp
     <input type="button" id="AddArticleFormButtonAdd" value="Add">
-    <br><br>
-    <textarea readonly rows="30" cols="87" id="AddArticleFormTextArea"></textarea>
-    <br><br>
-    <input type="button" id="AddArticleFormButtonGoBack" value="Back">
-    <input type="button" id="AddArticleFormButtonDownloadLog" value="Download Log File">
 
+    <br><br>
+
+    <textarea readonly rows="30" cols="87" id="AddArticleFormTextArea"></textarea>
+
+    <br><br>
+
+    <input type="button" id="AddArticleFormButtonGoBack" value="Back">
+    <input type="button" id="AddArticleFormButtonDownloadLog" value="Download Your Log File">
+
+    <!-- Hidden link-->
     <a download="article_insights_log.log" href="" id="AddArticleFormLinkDownloadLog"></a>
 
 </body>
