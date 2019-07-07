@@ -13,7 +13,7 @@
 <form method = "POST" action="IndividualArticleAnalyticsControlPanel">
   Article title:
   <br>
-  <input type="text" name="title_name" required pattern="^[a-zA-Z0-9 ()]+ \(# [0-9]+\)$" 
+  <input type="text" name="title_name" required pattern="^[a-zA-Z0-9,. ()]+ \(# [0-9]+\)$"
   autocomplete="off" list="titleNames" id="controlPanelTextInputTitleName" size="45">
   <datalist id="titleNames"></datalist>
     <input type="submit" value="Insight!">
