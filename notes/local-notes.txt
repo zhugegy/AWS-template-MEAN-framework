@@ -1,0 +1,7 @@
+sudo apt-get install imagemagick
+# used for image crop after it is collected from screenshot API service.
+
+create folder  public/images/website_screenshot/   （put in one sample image）
+
+scp folder public/cridentials
+scp folder node_modules
