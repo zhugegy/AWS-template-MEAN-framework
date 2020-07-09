@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84272e69-003d-44f8-b18c-00607685d881" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/connectDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/connectDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/establishOverallCollections.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/establishOverallCollections.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/user_switch_items.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/user_switch_items.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/data/user_switch_items.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -182,7 +188,6 @@
         <option value="$PROJECT_DIR$/app/models/APIConsumer.js" />
         <option value="$PROJECT_DIR$/public/javascripts/table_filler.js" />
         <option value="$PROJECT_DIR$/public/javascripts/add_article.js" />
-        <option value="$PROJECT_DIR$/public/data/user_switch_items.json" />
         <option value="$PROJECT_DIR$/app/views/add-article.ejs" />
         <option value="$PROJECT_DIR$/app/models/individualAnalytics.js" />
         <option value="$PROJECT_DIR$/public/css/login.css" />
@@ -197,10 +202,11 @@
         <option value="$PROJECT_DIR$/app/models/connectDB.js" />
         <option value="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" />
         <option value="$PROJECT_DIR$/notes/todo.txt" />
+        <option value="$PROJECT_DIR$/public/data/user_switch_items.json" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1780" />
     <option name="height" value="1417" />
@@ -252,6 +258,12 @@
               <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
               <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
@@ -369,12 +381,12 @@
       <workItem from="1566291277250" duration="55957000" />
       <workItem from="1571371847931" duration="1238000" />
       <workItem from="1571376752920" duration="22938000" />
-      <workItem from="1594284151973" duration="4329000" />
+      <workItem from="1594284151973" duration="4526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160922000" />
+    <option name="totallyTimeSpent" value="161119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1780" height="1417" extended-state="0" />
@@ -426,13 +438,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/data/table_contents/introduction.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/data/user_switch_items.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -729,6 +734,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/data/user_switch_items.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>

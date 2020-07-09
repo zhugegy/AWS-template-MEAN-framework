@@ -31,6 +31,6 @@
         "link":"../login",
         "content_en":"Log In",
         "content_zh-Hans":"登录",
-        "required-user-status": "not-signed-in"
+        "required-user-status": "not-signed-in-obsulate"
     }
 ]
