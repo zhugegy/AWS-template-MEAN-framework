@@ -28,7 +28,8 @@ var g_aryBot = fs.readFileSync(__dirname + g_constUserTypeDirName + 'bot.txt','u
 
 // file reading for credentials
 var g_strThumbnailwsAPIKey = fs.readFileSync(path.join(path.resolve("public"), "credentials/ThumbnailwsAPIKey.txt"), 'utf8').toString().trim();
-//console.log(g_strThumbnailwsAPIKey);
+// var g_strThumbnailwsAPIKey = fs.readFileSync(path.join(path.normalize(path.resolve("") + "/../.."), "public/credentials/ThumbnailwsAPIKey.txt"), 'utf8').toString().trim();
+console.log("get Image API key: " + g_strThumbnailwsAPIKey);
 
 // ## Data manipulation
 
@@ -50,7 +51,9 @@ function check_screenshot(lstObjArticles)
 
 	for (var i = 0; i < lstObjArticles.length; i++)
 	{
+		//var strPicPath = path.join(path.normalize(path.resolve("") + "/../.."), "public/images/website_screenshot/" + lstObjArticles[i] + ".jpeg");
 		var strPicPath = path.join(publicPath, "images/website_screenshot/" + lstObjArticles[i] + ".jpeg");
+		console.log("checking path:" + strPicPath);
 
 		fs.stat(strPicPath, function(err, stats)
 		{
@@ -71,6 +74,8 @@ function check_screenshot(lstObjArticles)
 					"convert " + "\"" + err.path + "\"" + " -crop 545x345+95+15 " + "\"" + err.path + "\"";
 
 				// "echo ab > " + "\"" + err.path.replace(".jpeg", ".txt") + "\""
+
+				console.log("new img added: " + err.path);
 
 				var child = exec(strTmp,
 					(error, stdout, stderr) =>

@@ -32,3 +32,4 @@ DONE add article名字里有特殊符号，比如()，会找不到此文章
 title name controller split 正则优化
 article fetching加锁，避免IAA重复fetching重复的revisons
 用户名，密码 tab修正
+py remove preview images with black block

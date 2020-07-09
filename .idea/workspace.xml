@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84272e69-003d-44f8-b18c-00607685d881" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/connectDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/connectDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/establishOverallCollections.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/establishOverallCollections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes/todo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,93 +32,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/landing.ejs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/sub_sections/control_panel_individual_article_analytics.html">
+        <entry file="file://$PROJECT_DIR$/notes/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="460">
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/sub_sections/control_panel_introduction.html">
+        <entry file="file://$PROJECT_DIR$/app/controllers/testpath.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="46">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/add-article.ejs">
+        <entry file="file://$PROJECT_DIR$/app/models/testforpath.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/APIConsumer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+              <caret selection-end-line="2" selection-end-column="130" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/userArrary.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/usertype/admin_former.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6">
-              <caret line="74" column="39" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="39" />
+            <state relative-caret-position="460">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/connectDB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/article_insights_server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="506">
+              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.js">
+        <entry file="file://$PROJECT_DIR$/app/models/establishOverallCollections.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="385">
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/table_filler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15981">
+              <caret line="834" column="79" selection-start-line="834" selection-start-column="77" selection-end-line="834" selection-end-column="79" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>graphDrawerButtonItem</find>
       <find>swal</find>
       <find>buttonar</find>
       <find>pulled</find>
@@ -142,6 +153,10 @@
       <find>session</find>
       <find>titleNames</find>
       <find>g_strThumbnailwsAPIKey</find>
+      <find>WikipediaCollectionCredentialDetails</find>
+      <find>ThumbnailwsAPIKey</find>
+      <find>path</find>
+      <find>publicPath</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,7 +172,6 @@
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_overall_analytics.html" />
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_author_analytics.html" />
         <option value="$PROJECT_DIR$/reverse_proxy_server.js" />
-        <option value="$PROJECT_DIR$/app/models/establishOverallCollections.js" />
         <option value="$PROJECT_DIR$/notes/local-app-notes.txt" />
         <option value="$PROJECT_DIR$/notes/api-notes.txt" />
         <option value="$PROJECT_DIR$/public/javascripts/global.js" />
@@ -165,10 +179,8 @@
         <option value="$PROJECT_DIR$/app/routes/article_insight.server.routes.js" />
         <option value="$PROJECT_DIR$/app/views/a.ejs" />
         <option value="$PROJECT_DIR$/public/css/add-article.css" />
-        <option value="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" />
         <option value="$PROJECT_DIR$/app/models/APIConsumer.js" />
         <option value="$PROJECT_DIR$/public/javascripts/table_filler.js" />
-        <option value="$PROJECT_DIR$/notes/todo.txt" />
         <option value="$PROJECT_DIR$/public/javascripts/add_article.js" />
         <option value="$PROJECT_DIR$/public/data/user_switch_items.json" />
         <option value="$PROJECT_DIR$/app/views/add-article.ejs" />
@@ -177,14 +189,21 @@
         <option value="$PROJECT_DIR$/app/views/landing.ejs" />
         <option value="$PROJECT_DIR$/public/css/landing.css" />
         <option value="$PROJECT_DIR$/public/sub_sections/control_panel_individual_article_analytics.html" />
-        <option value="$PROJECT_DIR$/app/models/connectDB.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/models/testforpath.js" />
+        <option value="$PROJECT_DIR$/app/models/establishOverallCollections.js" />
+        <option value="$PROJECT_DIR$/app/controllers/testpath.js" />
+        <option value="$PROJECT_DIR$/article_testpath.js" />
+        <option value="$PROJECT_DIR$/app/models/connectDB.js" />
+        <option value="$PROJECT_DIR$/app/controllers/article_insight.server.controller.js" />
+        <option value="$PROJECT_DIR$/notes/todo.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="838" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
+    <option name="width" value="1780" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -194,65 +213,70 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="usertype" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
+              <item name="notes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="website_screenshot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Article-Insight" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Article-Insight" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AWS-template-MEAN-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AWS-template-MEAN-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="sub_sections" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -261,7 +285,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/javascripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -300,12 +324,24 @@
     <configuration name="article_insights_server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/article_insights_server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="article_testpath.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="article_testpath.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="reverse_proxy_server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="reverse_proxy_server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="testforpath.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testforpath.js" working-dir="$PROJECT_DIR$/app/models">
+      <method v="2" />
+    </configuration>
+    <configuration name="testpath.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="testpath.js" working-dir="$PROJECT_DIR$/app/controllers">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.article_insights_server.js" />
+        <item itemvalue="Node.js.article_testpath.js" />
+        <item itemvalue="Node.js.testpath.js" />
+        <item itemvalue="Node.js.testforpath.js" />
         <item itemvalue="Node.js.reverse_proxy_server.js" />
       </list>
     </recent_temporary>
@@ -333,14 +369,15 @@
       <workItem from="1566291277250" duration="55957000" />
       <workItem from="1571371847931" duration="1238000" />
       <workItem from="1571376752920" duration="22938000" />
+      <workItem from="1594284151973" duration="4329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156593000" />
+    <option name="totallyTimeSpent" value="160922000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="23" width="1780" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -348,17 +385,17 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.41283125" visible="true" weight="0.21123321" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.41283125" visible="true" weight="0.14672036" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27040815" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2701887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42040816" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.14415094" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Palette" order="0" />
@@ -370,91 +407,20 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.58716875" visible="true" weight="0.18559219" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.58716875" visible="true" weight="0.29056388" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/models/APIConsumer.js</url>
-          <line>19</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/mongoDBW.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/articleinsight.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/steps_for_importing_new_data.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="390">
-            <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/background_paper.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/utilities/data_preprocess_and_import.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="140" selection-start-line="27" selection-start-column="136" selection-end-line="27" selection-end-column="140" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/local-app-notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/api-notes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/HTMLBodyBackbone/HTMLBodyBackbone.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/a.ejs" />
-    <entry file="file://$PROJECT_DIR$/app/views/login.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/data/table_contents/overall_analytics.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/article_insight.loginPage.routes.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/global.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -467,9 +433,6 @@
           <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/authorAnalytics.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -489,57 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/dbconnection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/overallAnalytics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" column="99" selection-start-line="39" selection-end-line="39" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/connectDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/insertData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/establishOverallCollections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="193" column="6" selection-start-line="193" selection-end-line="193" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/createCollections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/individualAnalytics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -564,20 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/article_insight.server.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mongoDBZ.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -588,30 +486,10 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.login.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/main_frame.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="200" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/table_filler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="834" column="79" selection-start-line="834" selection-start-column="77" selection-end-line="834" selection-end-column="79" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,42 +516,136 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/sub_sections/control_panel_individual_article_analytics.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="828">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/sub_sections/control_panel_introduction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1725">
           <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/usertype/admin_former.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/credentials/WikipediaCollectionCredentialDetails.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/authorAnalytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/createCollections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/date.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/dbconnection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/graphsDataGet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/individualAnalytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/insertData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/mongoDBW.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/mongoDBZ.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/overallAnalytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/updateOverallData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/article_insight.loginPage.routes.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/article_insight.server.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/add-article.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1012">
           <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/APIConsumer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/userArrary.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/usertype/admin_former.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/landing.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/APIConsumer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -684,17 +656,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
+    <entry file="file://$PROJECT_DIR$/app/models/userArrary.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="74" column="39" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="39" />
+        <state relative-caret-position="460">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/testforpath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_testpath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="102" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/testpath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/table_filler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15981">
+          <caret line="834" column="79" selection-start-line="834" selection-start-column="77" selection-end-line="834" selection-end-column="79" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/connectDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/establishOverallCollections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/article_insights_server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="506">
+          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/website_screenshot/FC Barcelona.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/article_insight.server.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

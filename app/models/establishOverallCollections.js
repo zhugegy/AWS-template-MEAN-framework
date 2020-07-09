@@ -10,7 +10,8 @@ var path = require("path");
 //});
 
 // file reading for credentials
-var g_strWikipediaCollectionCredential = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionCredentialDetails.txt"), 'utf8').toString().split("\n");
+// var g_strWikipediaCollectionCredential = fs.readFileSync(path.join(path.resolve("public"), "credentials/WikipediaCollectionCredentialDetails.txt"), 'utf8').toString().split("\n");
+var g_strWikipediaCollectionCredential = fs.readFileSync(path.join(path.normalize(path.resolve("") + "/../.."), "public/credentials/WikipediaCollectionCredentialDetails.txt"), 'utf8').toString().split("\n");
 
 mongoose.connect('mongodb://' +
     g_strWikipediaCollectionCredential[1].trim() + ':' +
