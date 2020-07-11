@@ -2,7 +2,7 @@
 
 ![title_img](misc/title_img.png)
 
-A simple website that collects and analyzes data from WikiPedia API. An assignment of a web development course.
+A simple website that collects and analyzes data from WikiPedia API, altered from an assignment of a web development course.
 
 Live deployment: [Amazon Web Services](http://ec2-54-252-170-213.ap-southeast-2.compute.amazonaws.com:3000/)
 
@@ -19,7 +19,7 @@ Features:
 
 ![title_img](misc/title_img.png)
 
-一个简单的用于收集并分析来自维基百科API的数据的网站。一个网站开发课程的作业。
+一个简单的用于收集并分析来自维基百科API的数据的网站，修改自一个网站开发课程的作业。
 
 在线部署：[Amazon Web Services](http://ec2-54-252-170-213.ap-southeast-2.compute.amazonaws.com:3000/)
 
